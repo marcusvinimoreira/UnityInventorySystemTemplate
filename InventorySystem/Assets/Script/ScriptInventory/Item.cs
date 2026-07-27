@@ -7,15 +7,13 @@ public class Item : ScriptableObject
     public string nameItem;
     public Sprite icone;
     public int id;
+    public GameObject dropPrefab;
 
     public virtual void Use()
     {
-        Debug.Log("Using "+nameItem);
+        Debug.Log("Using " + nameItem);
 
     }
 
-    public void RemoveIInv()
-    {
-        InventoryCod.instance.RemoveI(this);
-    }
+   
 }

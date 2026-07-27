@@ -1,19 +1,25 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using TMPro;
 
 public class InventorySlot : MonoBehaviour
 {
     public Image iconeS;
     public Button removeBtn;
-    public Item item;
+    public TMP_Text amountText;
 
-    public void AddItem(Item i)
+    //public Item item;
+    public InventoryItem item;
+
+    public void AddItem(InventoryItem i)
     {
         item = i;
-        iconeS.sprite = item.icone;
+        iconeS.sprite = item.item.icone;
         iconeS.enabled = true;
         removeBtn.interactable = true;
+
+        UpdateAmount();
     }
 
     public void ClearSlot()
@@ -21,6 +27,7 @@ public class InventorySlot : MonoBehaviour
         item = null;
         iconeS.sprite = null;
         iconeS.enabled = false;
+        amountText.enabled = false;
         removeBtn.interactable = false;
     }
 
@@ -31,21 +38,23 @@ public class InventorySlot : MonoBehaviour
 
     public void UseItem()
     {
-        if(item != null)
+        if (item != null)
         {
-            item.Use();
-            if(item.id ==0 && PlayerMoviment.inst.hp <100)
-            {
-                PlayerMoviment.inst.hp += 10;
-                Debug.Log("Hp: "+PlayerMoviment.inst.hp);
-            }
-            else if (item.id == 1)
-            {
-                PlayerMoviment.inst.hp = 100;
-                Debug.Log("Hp: " + PlayerMoviment.inst.hp);
+            // item.item.Use();
+            InventoryCod.instance.UseItem(item);
 
-            }
-            InventoryCod.instance.RemoveI(item, true);
+        }
+    }
+    void UpdateAmount()
+    {
+        if (item.amount > 1)
+        {
+            amountText.text = item.amount.ToString();
+            amountText.enabled = true;
+        }
+        else
+        {
+            amountText.enabled = false;
         }
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -58,6 +67,6 @@ public class InventorySlot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

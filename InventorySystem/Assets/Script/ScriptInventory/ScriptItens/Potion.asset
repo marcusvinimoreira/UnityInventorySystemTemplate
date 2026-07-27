@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e116f85e5c6a2747a4efdb10dd1b738, type: 3}
+  m_Name: Potion
+  m_EditorClassIdentifier: 
+  nameItem: Potion
+  icone: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  id: 0
+  dropPrefab: {fileID: 5707892029298121214, guid: 36ae4e8ff7edd304ca89ab30e8433a11, type: 3}
+  healAmount: 20

@@ -6,6 +6,7 @@ using System.Collections;
 public class GetItem : Interact
 {
     public Item item;
+    public int amount = 1;
     public CircleCollider2D col;
     public bool caught;
 
@@ -26,7 +27,7 @@ public class GetItem : Interact
     void Collect()
     {
         Debug.Log("Pegando" + item.name);
-        caught = InventoryCod.instance.AddItem(item);
+        caught = InventoryCod.instance.AddItem(item, amount);
         if(caught)
         {
             Destroy(gameObject);

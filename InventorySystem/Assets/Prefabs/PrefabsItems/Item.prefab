@@ -69,7 +69,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Radius: 0.2
 --- !u!114 &1951779216909911050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82,10 +82,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 036a19973edcd514e9479cce5086a34b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ray: 0.5
+  ray: 0.2
   isFocus: 0
   interacted: 0
-  item: {fileID: 11400000, guid: 6ad431deb497df348b6013c0cd002650, type: 2}
+  item: {fileID: 11400000, guid: 728b5faa9b85c1e4e9032d8722233f29, type: 2}
+  amount: 1
   col: {fileID: 0}
   caught: 0
 --- !u!212 &7938549629009090583
