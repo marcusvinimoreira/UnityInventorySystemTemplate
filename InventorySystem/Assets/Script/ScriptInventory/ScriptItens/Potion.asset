@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Potion
   m_EditorClassIdentifier: 
   nameItem: Potion
-  icone: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  icone: {fileID: -6307014209967757795, guid: b779480558f1ac94e8e3705532ae845a, type: 3}
   id: 0
   dropPrefab: {fileID: 5707892029298121214, guid: 36ae4e8ff7edd304ca89ab30e8433a11, type: 3}
   healAmount: 20

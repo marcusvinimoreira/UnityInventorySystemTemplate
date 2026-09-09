@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Mana
   m_EditorClassIdentifier: 
   nameItem: Mana
-  icone: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  icone: {fileID: 469131930132911634, guid: b779480558f1ac94e8e3705532ae845a, type: 3}
   id: 1
   dropPrefab: {fileID: 4298925608146765970, guid: 222d88cc9bbcc96438f6d7f4aabd1ea2, type: 3}
   manaAmount: 20
