@@ -15,7 +15,7 @@ GameObject:
   m_Layer: 0
   m_Name: Item (1)
   m_TagString: Item
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -86,7 +86,7 @@ MonoBehaviour:
   isFocus: 0
   interacted: 0
   item: {fileID: 11400000, guid: ad9660645fd4a8841b289f6296dfa279, type: 2}
-  amount: 4
+  amount: 1
   col: {fileID: 0}
   caught: 0
 --- !u!212 &5613377748024167632
